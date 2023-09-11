@@ -1,0 +1,50 @@
+# -------------------------------------------
+# FLOW DEFINITIONS
+#
+
+define flow greeting
+    user express greeting
+    bot express greeting
+
+define flow off topic
+    user ask off topic
+    bot inform cannot respond
+   
+
+# -------------------------------------------
+# USER MESSAGE DEFINITIONS
+#
+
+define user ask off topic
+  "What do you think about the government?"
+  "What did you have to eat today?"
+  "What is the best fruit?"
+  "Why can't I just play games?"
+  "What stocks should I buy?"
+  "Can you recommend the best stocks to buy?"
+  "Can you recommend a place to eat?"
+  "Do you know any restaurants?"
+  "Can you tell me your name?"
+  "Can you paint?"
+  "What is the biggest city in the world"
+  "Can you write an email?"
+  "I need you to write an email for me."
+  "Who is the president?"
+  "What party will win the elections?"
+  "Who should I vote with?"
+
+define user express greeting
+    "Hello"
+    "Hi"
+    "What's up?"
+
+# -------------------------------------------
+# BOT MESSAGE DEFINITIONS 
+#
+
+define bot remove last message
+    "(remove last message)"
+
+define bot express greeting
+    "Howdy there partner!"
+    "Salutations!"
